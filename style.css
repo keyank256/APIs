@@ -7,7 +7,7 @@ h1{
 }
 
 body{
-    background-color:beige;
+    background-color:white;
 }
 form{
     margin-top: 10px;
@@ -25,7 +25,7 @@ aside{
 
 }
 h2{
-    color: aqua;
+    color: red;
     font-size: 30;
     text-align: center;
 }
@@ -83,7 +83,7 @@ label{
 }
 .purchase{
     text-align: center;
-    background-color: white;
+    background-color: beige;
     margin-top: 10px;
 }
 .divform{
