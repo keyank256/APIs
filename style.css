@@ -40,7 +40,7 @@ article{
 footer{
     clear: both;
     margin-bottom: 1px;
-    color: aqua;
+    color: red;
     text-align: center;
 }
 input[type="text"],input[type="number"],input[type="date"],input[type="time"] {
