@@ -7,7 +7,7 @@ h1{
 }
 
 body{
-    background-color:purple;
+    background-color:beige;
 }
 form{
     margin-top: 10px;
@@ -83,11 +83,11 @@ label{
 }
 .purchase{
     text-align: center;
-    background-color: blueviolet;
+    background-color: white;
     margin-top: 10px;
 }
 .divform{
-    background-color: blueviolet;
+    background-color:white;
     text-align: center;
     margin-top: 10px;
 }
@@ -106,5 +106,5 @@ img{
 .img{
     text-align: center;
 }
-/*<p>Add items that are out of stock to be purchased. Enter item name, quantity and description in the fieds below. </p>
+
                
