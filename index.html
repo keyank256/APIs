@@ -4,45 +4,15 @@
 <head>
     <title>Liz App</title>
     <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
 </head>
 
 <body>
 <script src="https://www.paypal.com/sdk/js?client-id=ATkBYzfxOoU0MDkW4FF1qkjHDKwzs0Mq4XsE_i1NYd0WEoUQa3Prr7ro7NYr6qR1560sdOxLUvOw9HfL"></script>
-<script>paypal.Buttons().render('body');</script>
-
- <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
-
-<script type="text/javascript">
-    $(function() {
-        var params = {
-            // Request parameters
-        };
-      
-        $.ajax({
-            url: "https://ericssonbasicapi2.azure-api.net/collection/v1_0/requesttopay?" + $.param(params),
-            beforeSend: function(xhrObj){
-                // Request headers
-                xhrObj.setRequestHeader("Authorization","");
-                xhrObj.setRequestHeader("X-Callback-Url","");
-                xhrObj.setRequestHeader("X-Reference-Id","");
-                xhrObj.setRequestHeader("X-Target-Environment","");
-                xhrObj.setRequestHeader("Content-Type","application/json");
-                xhrObj.setRequestHeader("Ocp-Apim-Subscription-Key","{subscription key}");
-            },
-            type: "POST",
-            // Request body
-            data: "{body}",
-        })
-        .done(function(data) {
-            alert("success");
-        })
-        .fail(function() {
-            alert("error");
-        });
-    });
-</script>
+<script>//paypal.Buttons().render('body');</script>
 
 
+<!--
     <div id="container">
         <div class="divheader">
             <header>
@@ -87,7 +57,7 @@
             <div class="img"> <img src="_DSC0472.jpg">
             </div>
 
-        </article>
+        </article>-->
         <footer> Designed by Keyan</footer>
     </div>
 </body>
