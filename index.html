@@ -10,13 +10,21 @@
 <body>
 <script src="https://www.paypal.com/sdk/js?client-id=AVvq04l_I9qUxTwptLoiXC6mpabzbmUbs_ZDm8act5-ikW6OyDWs0-dl8NbjSzV7L9iJZUB2ztnRmBU0"></script>
     <script>paypal.Buttons().render('body');</script><br>
+<form>
+    <script src="https://api.ravepay.co/flwv3-pug/getpaidx/api/flwpbf-inline.js"></script>
+   <label for="">Email address</label><br>
+              <input type="text" name="email" id="email" class="form-control border-input"placeholder="Enter email address" style="margin-bottom: 30px;"></br>
+ <label for="">Amount</label><br>
+              <input type="number" name="amount" id="amount" class="form-control border-input" placeholder="Enter amount" style="margin-bottom: 30px;"></br>
+    <button type="button" onClick="payWithRave()">Donate</button>
+</form><br>
 
 <form>
   <a class="flwpug_getpaid" 
   data-PBFPubKey="FLWPUBK-37e0e90bf7d141296f95f46bd191e07d-X" 
   data-txref="rave-123456" 
-  data-amount="<script>document.getElementById("amount").value;</script>"
-  data-customer_email="<script>document.getElementById("email").value;</script>"
+  data-amount=""
+  data-customer_email=""
   data-meta-flightID="APX0093GHK"
   data-currency="UGX" 
   data-pay_button_text="Donate" 
@@ -26,14 +34,6 @@
   <script type="text/javascript" src="https://api.ravepay.co/flwv3-pug/getpaidx/api/flwpbf-inline.js"></script>
 </form>
 <br>
-<form>
-    <script src="https://api.ravepay.co/flwv3-pug/getpaidx/api/flwpbf-inline.js"></script>
-   <label for="">Email address</label><br>
-              <input type="text" name="email" id="email" class="form-control border-input"placeholder="Enter email address" style="margin-bottom: 30px;"></br>
- <label for="">Amount</label><br>
-              <input type="number" name="amount" id="amount" class="form-control border-input" placeholder="Enter amount" style="margin-bottom: 30px;"></br>
-    <button type="button" onClick="payWithRave()">Donate</button>
-</form><br>
 
 <script>
     const API_publicKey = "FLWPUBK-37e0e90bf7d141296f95f46bd191e07d-X";
