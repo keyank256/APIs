@@ -18,7 +18,7 @@
     
     document.addEventListener("DOMContentLoaded", function(event) {
       document.getElementById("submit").addEventListener("click", function(e) {
-        var PBFKey = "FLWPUBK-b13f71d6b6c2d0d7642fcb0df026c4ca-X";
+        var PBFKey = "FLWPUBK-37e0e90bf7d141296f95f46bd191e07d-X";
         var email = document.getElementById('email').value;
     
         // getpaidSetup is Rave's inline script function. it holds the payment data to pass to Rave.
