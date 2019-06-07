@@ -12,11 +12,12 @@
 <script src="https://www.paypal.com/sdk/js?client-id=AVvq04l_I9qUxTwptLoiXC6mpabzbmUbs_ZDm8act5-ikW6OyDWs0-dl8NbjSzV7L9iJZUB2ztnRmBU0"></script>
     <script>paypal.Buttons( {
     createOrder: function(data, actions) {
+var amount=document.getElementById('amount');
       // Set up the transaction
       return actions.order.create({
         purchase_units: [{
           amount: {
-            value: '200'
+            value: amount,
           }
         }]
       });
