@@ -37,7 +37,7 @@
     function payWithRave() {
         var x = getpaidSetup({
             PBFPubKey: API_publicKey,
-            customer_email: "user@example.com",
+            customer_email: document.getElementById("email"),
             amount: 2000,
             customer_phone: "234099940409",
             currency: "NGN",
