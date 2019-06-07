@@ -27,7 +27,7 @@
           customer_email: email,
           customer_firstname: "Temi",
           customer_lastname: "Adelewa",
-          amount: 200,
+          amount: amount,
           customer_phone: "234099940409",
           //payment_method: "card_ussd",
           country: "ZA",
