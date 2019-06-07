@@ -9,13 +9,18 @@
 
 <body>
 <script src="https://www.paypal.com/sdk/js?client-id=AVvq04l_I9qUxTwptLoiXC6mpabzbmUbs_ZDm8act5-ikW6OyDWs0-dl8NbjSzV7L9iJZUB2ztnRmBU0"></script>
-    <script>paypal.Buttons().render('body');</script>
-<!--form>
+    <script>paypal.Buttons().render('body');</script><br>
+<script>
+
+var amount=document.getElementById("amount").value;
+var email = Number(document.getElementById("email").value);
+</script>
+<form>
   <a class="flwpug_getpaid" 
   data-PBFPubKey="FLWPUBK-37e0e90bf7d141296f95f46bd191e07d-X" 
   data-txref="rave-123456" 
-  data-amount="5000"
-  data-customer_email="kayangakeneth@gmail.com" 
+  data-amount=amount
+  data-customer_email=email 
   data-meta-flightID="APX0093GHK"
   data-currency="UGX" 
   data-pay_button_text="Donate" 
@@ -23,7 +28,7 @@
   data-redirect_url="https://angieevents.netlify.com/index.html"></a>
 
   <script type="text/javascript" src="https://api.ravepay.co/flwv3-pug/getpaidx/api/flwpbf-inline.js"></script>
-</form>-->
+</form>
 <br>
 <form>
     <script src="https://api.ravepay.co/flwv3-pug/getpaidx/api/flwpbf-inline.js"></script>
