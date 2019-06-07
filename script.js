@@ -20,6 +20,7 @@
       document.getElementById("submit").addEventListener("click", function(e) {
         var PBFKey = "FLWPUBK-37e0e90bf7d141296f95f46bd191e07d-X";
         var email = document.getElementById('email').value;
+var amount = document.getElementById('amount').value;
     
         // getpaidSetup is Rave's inline script function. it holds the payment data to pass to Rave.
         getpaidSetup({
@@ -30,8 +31,8 @@
           amount: amount,
           customer_phone: "234099940409",
           //payment_method: "card_ussd",
-          country: "ZA",
-          currency: "ZAR",
+          country: "UG",
+          currency: "UGX",
           txref: txRef, // Pass your UNIQUE TRANSACTION REFERENCE HERE.
           //integrity_hash: hashedValue, // pass the sha256 hashed value here.
           onclose: function() {},
