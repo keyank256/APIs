@@ -10,71 +10,20 @@
 
 <body>
 <script src="https://www.paypal.com/sdk/js?client-id=AVvq04l_I9qUxTwptLoiXC6mpabzbmUbs_ZDm8act5-ikW6OyDWs0-dl8NbjSzV7L9iJZUB2ztnRmBU0"></script>
-    <script>paypal.Buttons().render('amount');</script><br>
+    <script>paypal.Buttons().render('body');</script><br>
 <center><form>
     <script src="https://api.ravepay.co/flwv3-pug/getpaidx/api/flwpbf-inline.js"></script>
    <label for="">Email address</label><br>
               <input type="text" name="email" id="email" class="form-control border-input"placeholder="Enter email address" style="margin-bottom: 30px;"></br>
  <label for="">Amount</label><br>
               <input type="number" name="amount" id="amount" class="form-control border-input" placeholder="Enter amount" style="margin-bottom: 30px;"></br>
-    <button type="button" onClick="payWithRave()">Donate</button><br>
 
-          <button class="btn btn-primary" id="submit" type="button">Continue and donate</button>
+          <button class="btn btn-primary" id="submit" type="button">Continue and donate</button><br>
       
 </form><br>
-
-<form>
-  <a class="flwpug_getpaid" 
-  data-PBFPubKey="FLWPUBK-37e0e90bf7d141296f95f46bd191e07d-X" 
-  data-txref="rave-123456" 
-  data-amount="5000"
-  data-customer_email="kayangakeneth@gmail.com"
-  data-meta-flightID="APX0093GHK"
-  data-currency="UGX" 
-  data-pay_button_text="Donate" 
-  data-country="UG" 
-  data-redirect_url="https://keyandev.netlify.com/index.html"></a>
-
-  <script type="text/javascript" src="https://api.ravepay.co/flwv3-pug/getpaidx/api/flwpbf-inline.js"></script>
-</form>
 <br>
 
-<script>
-    const API_publicKey = "FLWPUBK-37e0e90bf7d141296f95f46bd191e07d-X";
-
-    function payWithRave() {
-
-var am=document.getElementById("amount").value;
-var em = Number(document.getElementById("email").value);
-        var x = getpaidSetup({
-            PBFPubKey:API_publicKey,
-            customer_email:"kayangakeneth@gmail.com",
-            amount:"49000",
-            customer_phone: "234099940409",
-            currency: "UGX",
-            txref: "rave-123456",
-            meta: [{
-                metaname: "flightID",
-                metavalue: "AP1234"
-            }],
-            onclose: function() {},
-            callback: function(response) {
-                var txref = response.tx.txRef; // collect txRef returned and pass to a 					server page to complete status check.
-                console.log("This is the response returned after a charge", response);
-                if (
-                    response.tx.chargeResponseCode == "00" ||
-                    response.tx.chargeResponseCode == "0"
-                ) {
-                    // redirect to a success page
-                } else {
-                    // redirect to a failure page.
-                }
-
-                x.close(); // use this to close the modal immediately after payment.
-            }
-        });
-    }
-</script></center>
+</center>
 <!--
     <div id="container">
         <div class="divheader">
