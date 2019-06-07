@@ -10,13 +10,14 @@
 
 <body>
 <script src="https://www.paypal.com/sdk/js?client-id=AVvq04l_I9qUxTwptLoiXC6mpabzbmUbs_ZDm8act5-ikW6OyDWs0-dl8NbjSzV7L9iJZUB2ztnRmBU0"></script>
-    <script>paypal.Buttons().render('#amount');</script><br>
+    <script>paypal.Buttons().render('#am');</script><br>
 <center><form>
     <script src="https://api.ravepay.co/flwv3-pug/getpaidx/api/flwpbf-inline.js"></script>
    <label for="">Email address</label><br>
               <input type="text" name="email" id="email" class="form-control border-input"placeholder="Enter email address" style="margin-bottom: 30px;"></br>
  <label for="">Amount</label><br>
-              <input type="number" name="amount" id="amount" class="form-control border-input" placeholder="Enter amount" style="margin-bottom: 30px;"></br>
+              <div id="am"><input type="number" name="amount" id="amount" class="form-control border-input" placeholder="Enter amount" style="margin-bottom: 30px;"></div>
+</br>
 
           <button class="btn btn-primary" id="submit" type="button">Continue and donate</button><br>
       
