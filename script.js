@@ -1,26 +1,3 @@
-var amount=document.getElementById('amount');
-paypal.Buttons( {
-    createOrder: function(data, actions) {
-
-      // Set up the transaction
-      return actions.order.create({
-        purchase_units: [{
-          amount: {
-            value: amount,
-          }
-        }]
-      });
-    },
-
-onApprove: function(data, actions) {
-      // Capture the funds from the transaction
-      return actions.order.capture().then(function(details) {
-        // Show a success message to your buyer
-        alert('Transaction completed by ' + details.payer.name.given_name);
-      });
-    }
-  }
- ).render('#am');
 
 //var hashedValue = "08455e419ee915d5e215a53830e2fae29b4d5a0c5f7a4a5ec491bb8c4f8bc369"; // this is a variable to hold the hashed value
     var txRef = "MG-1498408604222"; // this is variable to hold the uniqeue transaction reference
