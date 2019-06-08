@@ -16,6 +16,7 @@
     
 <script src="https://www.paypal.com/sdk/js?client-id=AVvq04l_I9qUxTwptLoiXC6mpabzbmUbs_ZDm8act5-ikW6OyDWs0-dl8NbjSzV7L9iJZUB2ztnRmBU0"></script>
     <script>    
+        var amount = document.getElemtentById('amount').value;
 paypal.Buttons( {
     createOrder: function(data, actions) {
 
@@ -23,7 +24,7 @@ paypal.Buttons( {
       return actions.order.create({
         purchase_units: [{
           amount: {
-            value: "document.getElementById('amount').value"
+            value: amount
           }
         }]
       });
