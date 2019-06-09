@@ -55,8 +55,21 @@ onApprove: function(data, actions) {
     <br>
 <div id="am"></div>
 <br>
+<style>
+@media screen and (max-width: 400px) {
+ #paypal-button-container {
+ width: 100%;
+ }
+}
 
-<div id="paypal-button" style="width: 50%"></div>
+@media screen and (min-width: 400px) {
+ #paypal-button-container {
+ width: 250px;
+ }
+}
+</style>
+
+<div id="paypal-button-container"></div>
 
 <script>
 paypal.Button.render({
