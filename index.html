@@ -38,7 +38,15 @@ onApprove: function(data, actions) {
       });
     }
   }
- ).render('#am');
+ ).render({
+locale: 'en_US',
+style: {
+ size: 'small',
+ color: 'gold',
+ shape: 'pill',
+ label: 'checkout',
+ tagline: 'true'
+} },'#am');
 
     </script>
     <br>
