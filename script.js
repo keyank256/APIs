@@ -27,8 +27,8 @@ var amount = document.getElementById('amount').value;
         getpaidSetup({
           PBFPubKey: PBFKey,
           customer_email: email,
-          customer_firstname: "Temi",
-          customer_lastname: "Adelewa",
+          customer_firstname: "",
+          customer_lastname: "",
           amount: amount,
           customer_phone: "234099940409",
           //payment_method: "card_ussd",
