@@ -38,7 +38,11 @@ onApprove: function(data, actions) {
       });
     }
   }
- ).render('#am');
+ ).render({
+ style: {
+ size: 'responsive'
+ }
+},'#am');
 
     </script>
     <br>
@@ -56,28 +60,7 @@ onApprove: function(data, actions) {
 <div id="am"></div>
 <br>
 <style>
-@media screen and (max-width: 400px) {
- #paypal-button-container {
- width: 100%;
- }
-}
 
-@media screen and (min-width: 400px) {
- #paypal-button-container {
- width: 250px;
- }
-}
-</style>
-
-<div id="paypal-button-container"></div>
-
-<script>
-paypal.Button.render({
- style: {
- size: 'responsive'
- }
-}, '#paypal-button-container');
-</script>
 </center>
 <!--
     <div id="container">
