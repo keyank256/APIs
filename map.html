@@ -23,10 +23,11 @@
     <script>
       var map;
       function initMap() {
-        map = new google.maps.Map(document.getElementById('map'), {
-          center: {lat: 0.344087, lng: 32.644930},
-          zoom: 20
-        });
+var keyan = {lat: 0.344087, lng: 32.644930};
+      var  map = new google.maps.Map(document.getElementById('map'), {
+          center: keyan, zoom: 20});
+var marker = new google.maps.Marker({position: keyan, map: map});
+
       }
     </script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDTf66fWZ2W4reB7CJwH14hJasvPb6PB5o&callback=initMap"
