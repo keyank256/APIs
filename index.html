@@ -25,7 +25,9 @@ paypal.Buttons( {
       return actions.order.create({
         purchase_units: [{
           amount: {
-            value:document.getElementById('amount');
+            value:function (){
+var am=document.getElementById('amount');
+return'am';}
           }
         }]
       });
