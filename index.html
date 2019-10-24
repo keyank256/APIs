@@ -22,10 +22,10 @@ paypal.Buttons( {
     createOrder: function(data, actions) {
 
       // Set up the transaction
- let amt = document.getElementById("amount").value;
+// let amt = document.getElementById("amount").value;
       return actions.order.create({
         purchase_units: [{
-          amount: amt
+          amount: '10'
 
           
         }]
