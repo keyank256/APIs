@@ -22,14 +22,12 @@ paypal.Buttons( {
     createOrder: function(data, actions) {
 
       // Set up the transaction
+ let amount = document.getElementById("amounts").value
       return actions.order.create({
         purchase_units: [{
-          amount: {
-            value:function (){
-var amount=document.getElementById('amount');
-return'amount';
-}
-          }
+          amount: amount
+
+          
         }]
       });
     },
@@ -53,7 +51,7 @@ onApprove: function(data, actions) {
             <input type="text" name="email" id="email" class="form-control border-input"placeholder="Enter email address" style="margin-bottom: 30px;">
             </br>
         <label for="">Amount</label><br>
-        <input type="number" name="amount" id="amount" class="form-control border-input" placeholder="Enter amount" style="margin-bottom: 30px;"></br>
+        <input type="number" name="amounts" id="amount" class="form-control border-input" placeholder="Enter amount" style="margin-bottom: 30px;"></br>
     <button class="btn btn-primary" id="submit" type="button">PAY WITH MOBILE MONEY</button><br>
     </form>
     <br>
